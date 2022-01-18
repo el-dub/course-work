@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.page-item.active .page-link {
+    z-index: 3;
+    color: #fff;
+    background-color: blueviolet;
+    border-color: blueviolet;
+}
+
+.page-link {
+    color: blueviolet;
+}
+

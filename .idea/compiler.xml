@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="vacancies-vue" />
+      </profile>
+      <profile name="Annotation profile for vacancies-app" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$PROJECT_DIR$/../../Program Files x86/maven/.m2/repository/org/mapstruct/mapstruct-processor/1.4.2.Final/mapstruct-processor-1.4.2.Final.jar" />
+          <entry name="$PROJECT_DIR$/../../Program Files x86/maven/.m2/repository/org/mapstruct/mapstruct/1.4.2.Final/mapstruct-1.4.2.Final.jar" />
+          <entry name="$PROJECT_DIR$/../../Program Files x86/maven/.m2/repository/org/projectlombok/lombok-mapstruct-binding/0.2.0/lombok-mapstruct-binding-0.2.0.jar" />
+          <entry name="$PROJECT_DIR$/../../Program Files x86/maven/.m2/repository/org/projectlombok/lombok/1.18.22/lombok-1.18.22.jar" />
+          <entry name="$PROJECT_DIR$/../../Program Files x86/maven/.m2/repository/org/springframework/boot/spring-boot-configuration-processor/2.6.2/spring-boot-configuration-processor-2.6.2.jar" />
+        </processorPath>
+        <module name="vacancies" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="vacancies" target="11" />
+      <module name="vacancies-app" target="1.8" />
+      <module name="vacancies-vue" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="vacancies" options="-parameters" />
+      <module name="vacancies-vue" options="-parameters" />
+    </option>
+  </component>
+</project>
